@@ -1,0 +1,17 @@
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.csproj.AssemblyReference.cache
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.AssemblyInfoInputs.cache
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.AssemblyInfo.cs
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.csproj.CoreCompileInputs.cache
+/home/tugce/Project/Project.Data/bin/Debug/net8.0/Project.Data.deps.json
+/home/tugce/Project/Project.Data/bin/Debug/net8.0/Project.Data.runtimeconfig.json
+/home/tugce/Project/Project.Data/bin/Debug/net8.0/Project.Data.dll
+/home/tugce/Project/Project.Data/bin/Debug/net8.0/Project.Data.pdb
+/home/tugce/Project/Project.Data/bin/Debug/net8.0/Project.Core.dll
+/home/tugce/Project/Project.Data/bin/Debug/net8.0/Project.Core.pdb
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.csproj.CopyComplete
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.dll
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/refint/Project.Data.dll
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.pdb
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/Project.Data.genruntimeconfig.cache
+/home/tugce/Project/Project.Data/obj/Debug/net8.0/ref/Project.Data.dll

@@ -1,0 +1,17 @@
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.csproj.AssemblyReference.cache
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.GeneratedMSBuildEditorConfig.editorconfig
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.AssemblyInfoInputs.cache
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.AssemblyInfo.cs
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.csproj.CoreCompileInputs.cache
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Service.deps.json
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Service.dll
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Service.pdb
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Core.dll
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Data.dll
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Data.pdb
+/home/tugce/Project/Project.Service/bin/Debug/net8.0/Project.Core.pdb
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.csproj.CopyComplete
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.dll
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/refint/Project.Service.dll
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/Project.Service.pdb
+/home/tugce/Project/Project.Service/obj/Debug/net8.0/ref/Project.Service.dll
