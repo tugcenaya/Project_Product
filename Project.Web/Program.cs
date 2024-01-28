@@ -5,40 +5,24 @@ using Project.Data;
 using Project.Service.Mapping;
 using Project.Web;
 using Project.Web.Services;
+using Project.Web.Hubs;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddSignalR();
 builder.Services.AddAuthorization();
 
-// Add services to the container.
 builder.Services.AddAutoMapper(typeof(MapProfile));
-builder.Services.AddDbContext<ProjectDbContext>(x =>
-{
-    x.UseSqlServer(builder.Configuration.GetConnectionString("MsSQLConnection"), option =>
-    {
-        option.MigrationsAssembly(Assembly.GetAssembly(typeof(ProjectDbContext)).GetName().Name);
-    });
-});
-
-builder.Services.AddHttpClient<ProductApiService>(opt =>
-{
-    opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
-
-});
-builder.Services.AddHttpClient<CategoryApiService>(opt =>
-{
-    opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
-
-});
+builder.Services.AddDbContext<ProjectDbContext>(options =>
+  options.UseSqlServer(builder.Configuration.GetConnectionString("MsSQLConnection")));
 
 builder.Host.UseServiceProviderFactory
     (new AutofacServiceProviderFactory());
 
-builder.Services.AddAuthorization();
 builder.Services.AddControllers();
+
 var app = builder.Build();
 
 app.UseExceptionHandler("/Home/Error");
@@ -54,6 +38,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.MapHub<SignalServer>("/SignalServer");
 
 app.MapControllerRoute(
     name: "default",
