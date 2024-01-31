@@ -19,12 +19,17 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.SuppressModelStateInvalidFilter = true;
 });
 
+builder.Services.AddScoped<IProductService, ProductService>();
+
+builder.Services.AddAutofac();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMemoryCache();
 builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddDbContext<ProjectDbContext>(options =>
-  options.UseSqlServer(builder.Configuration.GetConnectionString("MsSQLConnection")));
+  options.UseSqlServer(builder.Configuration.GetConnectionString("MsSQLConnection"), 
+            b => b.MigrationsAssembly("Project.API")));
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 
