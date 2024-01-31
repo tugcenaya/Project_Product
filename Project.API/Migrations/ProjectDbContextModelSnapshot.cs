@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Project.Data;
 
@@ -11,11 +10,9 @@ using Project.Data;
 namespace Project.API.Migrations
 {
     [DbContext(typeof(ProjectDbContext))]
-    [Migration("20240123212549_New_Migration")]
-    partial class New_Migration
-    {/*
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+    partial class ProjectDbContextModelSnapshot : ModelSnapshot
+    {
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,6 +84,6 @@ namespace Project.API.Migrations
                     b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
-        }*/
+        }
     }
 }

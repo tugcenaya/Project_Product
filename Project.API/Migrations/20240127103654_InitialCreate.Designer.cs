@@ -11,9 +11,9 @@ using Project.Data;
 namespace Project.API.Migrations
 {
     [DbContext(typeof(ProjectDbContext))]
-    [Migration("20240123212549_New_Migration")]
-    partial class New_Migration
-    {/*
+    [Migration("20240127103654_InitialCreate")]
+    partial class InitialCreate
+    {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -87,6 +87,6 @@ namespace Project.API.Migrations
                     b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
-        }*/
+        }
     }
 }

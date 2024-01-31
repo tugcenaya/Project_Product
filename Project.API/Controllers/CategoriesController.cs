@@ -30,11 +30,6 @@ namespace Project.API.Controllers
             return CreateActionResult(CustomResponseDto<List<CategoryDto>>.Success(200, categoriesDto));
         }
 
-        // Get a single category by its ID along with its products.
-        [HttpGet("[action]/{categoryId}")]
-        public async Task<IActionResult> GetSingleCategoryByIdWithProducts(int categoryId)
-        {
-            return CreateActionResult(await _categoryService.GetSingleCategoryByIdWithProductsAsync(categoryId));
-        }
+
     }
 }
